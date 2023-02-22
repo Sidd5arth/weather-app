@@ -1,32 +1,64 @@
+@font-face {
+  font-family: MarkProBlack;
+  src: url(./components/Font/MarkPro-Black.otf);
+}
+@font-face {
+  font-family: MarkProBold;
+  src: url(./components/Font/MarkPro-Bold.otf);
+}
+@font-face {
+  font-family: MarkProBook;
+  src: url(./components/Font/MarkPro-Book.otf);
+}
+@font-face {
+  font-family: MarkProLight;
+  src: url(./components/Font/MarkPro-Light.otf);
+}
+.text-style1{
+  font-family: MarkProBook;
+  font-size: medium;
+  /* padding-right: 10em; */
+}
+.text-style{
+  font-family: MarkProLight;
+  font-size: 0.7em;
+  /* padding-right: 10em; */
+}
+.text-style2{
+  font-family: MarkProLight;
+  color: aliceblue;
+  font-size: 5em;
+}
+.text-style3{
+  font-family: MarkProBook;
+  font-size: small;
+  text-align: left;
+  color: aliceblue;
+}
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-styles{
+  border: none;
+  /* filter:drop-shadow(5px 5px 0px #888fe2) */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button-styles{
+  border-radius: 0.5em;
+  border: none;
+  width: 3.3em;
+  box-shadow: 3px 3px 10px #26376237;
+  background-color: rgb(255, 255, 255);
 }
-
-.App-link {
-  color: #61dafb;
+img{
+  width: 2em;
+  height: 2em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li{
+  list-style: none;
+}
+.ul-style{
+  height: 17em;
+  overflow: scroll;
 }
