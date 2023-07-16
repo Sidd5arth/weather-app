@@ -8,6 +8,8 @@
 
 ✏ App fetches data from a weather api via axios and shows one week data.
 
+✏ The App the designed by me in figma!
+
 LIVE APP DEPLOYED ON VERCEL - https://weather-app-rho-mocha.vercel.app/
 
 
