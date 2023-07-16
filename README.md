@@ -1,3 +1,8 @@
+# This is one of the project that as given to me in the initial days of my frontend inter training at Zigram india.
+- what I have learnt from this ?
+✏ Management of Multiple compnents and rerenders
+✏ Rest api and api integration
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
