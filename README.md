@@ -6,7 +6,7 @@
 
 ✏ Rest api and api integration
 
-✏ App fetches data from a weather api via axios and shows one week data from today 
+✏ App fetches data from a weather api via axios and shows one week data.
 
 LIVE APP DEPLOYED ON VERCEL - https://weather-app-rho-mocha.vercel.app/
 
