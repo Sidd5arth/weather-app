@@ -8,6 +8,8 @@
 
 ✏ App fetches data from a weather api via axios and shows one week data from today 
 
+LIVE APP DEPLOYED ON VARCEL - https://weather-app-rho-mocha.vercel.app/
+
 
 
 https://github.com/Sidd5arth/weather-app/assets/88337830/49d5ed02-b71c-46ca-869c-5d35998848db
