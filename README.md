@@ -1,4 +1,4 @@
-# This is one of the project that as given to me in the initial days of my frontend inter training at Zigram india.
+# This is one of the project that was given to me in the initial days of my frontend inter training at Zigram india.
 
 - what I have learnt from this ?
  
