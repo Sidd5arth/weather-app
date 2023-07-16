@@ -1,6 +1,8 @@
 .Card-style{
     border: none;
-    width: 6rem;
+    width: 10rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
     border-radius: 1em;
     text-align: left;
     max-width: 34rem;
@@ -14,5 +16,9 @@
 }
 .card-cover{
     margin: 0;
+    padding: 0;
+}
+.ul-styles{
+    list-style-type: none;
     padding: 0;
 }

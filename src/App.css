@@ -24,6 +24,11 @@
   font-size: 0.7em;
   /* padding-right: 10em; */
 }
+.text-style11{
+  font-family: MarkProLight;
+  font-size: 1em;
+  text-align: center;
+}
 .text-style2{
   font-family: MarkProLight;
   color: aliceblue;

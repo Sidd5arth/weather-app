@@ -1,17 +1,45 @@
 import React from 'react';
 import './Live.css';
-import w1 from './Icons/w1.png';
+import dayjs from 'dayjs';
 
-const Live = () => {
+const Live = (props) => {
+  const days = [
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "sat",
+  ]
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ]
+console.log(props)
   return (
-    <div className='d-flex flex-column justify-content-between mt-3 styles1 p-2'>
-      <h1 className='text-style2 d-flex justify-content-center'>23°C</h1>
-      <div className='details d-flex flex-column justify-content-center text-align-center'>
-         <img className='' src={w1}alt='partialy cloudy'/>
-         <p className='text-style pt-1'>Night</p>
+    <div className='d-flex flex-column justify-content-between mt-4 styles1 p-2 align-item-center'>
+      <h1 className='text-style2 d-flex justify-content-center'>{props.liveData.temp}°C</h1>
+      <p className='p-style '>{`
+      ${months[dayjs.unix(props.liveData.dt).month()]} 
+      ${dayjs.unix(props.liveData.dt).date()} 
+      ${days[dayjs.unix(props.liveData.dt).day()]}`}
+      </p>
+      <div className='details d-flex flex-column align-items-center'>
+        <img className='icon-style text-style01' src={`http://openweathermap.org/img/wn/${props.liveData.icon}@2x.png`} alt='Select' />
+        <p className='text-style11'>{props.liveData.type}</p>
       </div>
     </div>
   )
 }
-
 export default Live
