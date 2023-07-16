@@ -41,7 +41,7 @@ const Live = (props) => {
       <div className='details d-flex flex-column align-items-center'>
         <img className='icon-style text-style01' src={`http://openweathermap.org/img/wn/${props.liveData.icon}@2x.png`} alt='' />
         <p className='text-style11'>
-          {props.liveData.type ? props.liveData.type : "Please select a city"}
+          {props.liveData.type ? props.liveData.type : "Please select a city from the dropdown"}
        </p>
       </div>
     </div>

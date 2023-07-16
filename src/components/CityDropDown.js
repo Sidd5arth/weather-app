@@ -5,8 +5,10 @@ import axios from 'axios';
 
 
 const CityDropDown = (props) => {
+    const [City, setCity] = useState(false);
 
     const handleChange = (event) =>{
+        setCity(true);
         const selectedCity = cities.filter((city) =>{
             return city.city === event.target.value
         })[0]
@@ -31,19 +33,24 @@ const CityDropDown = (props) => {
       <select className='dropdown-style'
       onChange = {handleChange}
       >
-        {
-            cities && cities.length > 0 && cities.map((city)=>{
-                return(
-                    <option key = {`${city.lat}${city.lng}`}
-                    value = {city.city}
-                    className='text-black text-style3 drop-style'
-                    style={{ backdropFilter: 'blur(5px)', backgroundColor: 'rgba(255, 255, 255, 0.5)', color:'black' }}>
-                        {city.city}-{city.admin_name}
-                        
-                    </option>
-                )
-            })
-        }
+      <option disabled selected value="">
+         Choose a city
+      </option>
+       {
+  cities && cities.length > 0 && cities.map((city) => {
+    return (
+      <option
+        key={`${city.lat}${city.lng}`}
+        value={city.city}
+        className='text-black text-style3 drop-style'
+        style={{ backdropFilter: 'blur(5px)', backgroundColor: 'rgba(255, 255, 255, 0.5)', color: 'black' }}
+      >
+        {city.city}
+        
+      </option>
+    );
+  })
+}
       </select>
     </div>
   )
